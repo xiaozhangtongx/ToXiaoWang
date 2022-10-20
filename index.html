@@ -7,6 +7,7 @@
     <meta name="title" content="小汪同学" />
     <!-- <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/sun0225SUN/photos/img/20210715233345.png" /> -->
     <link type="text/css" rel="stylesheet" href="css/theme.css" />
+    <link type="text/css" rel="stylesheet" href="css/index.css" />
     <script src="js/jquery-2.0.3.min.js"></script>
   </head>
 
@@ -69,7 +70,7 @@
       <div id="div_btn_container">
         <div id="div_btn_inner">
           <div class="div_music_tips"></div>
-          <div class="div_btn" id="div_music" onclick="music_switch()">
+          <div class="div_btn" id="div_music">
             <!-- 音乐按钮部分 -->
             <img id="img_music" src="images/music_note_big.png" style="-webkit-animation: music_play_rotate 1s linear infinite" />
             <!-- 您的浏览器不支持播放音乐 -->
@@ -78,7 +79,7 @@
             </audio>
           </div>
           <div class="div_record_tips"></div>
-          <div class="div_btn" id="div_record" onclick="record_switch()">
+          <div class="div_btn" id="div_record">
             <audio id="audio_record" loop="loop">
               <source type="audio/mpeg" />
             </audio>
@@ -112,7 +113,7 @@
       console.log('theme ->' + theme)
       var theme_content = {
         pure_words_content:
-          "我不知道该怎么说，我不怎么会说话，但我想告诉你，从我看见你的第一面开始，我就有点心动，当时我没在意，直到今年秋招，我们俩的相处时间才开始多起来，特别是您上次讲了您的经历，说实话那晚我想了很多，然后，渐渐的我发现我的生活离不开你的影子，我努力的克制住自己，才知道原来我刻意的克制自己只会让自己更加的喜欢你，我想通了，与其刻意的让自己不喜欢你，不如敞开心怀争取你，至少我以后不会遗憾，因为我争取过，从今天开始，我想要告诉你，我想追你，不管你愿不愿意，我只想要说，我喜欢你！<um style='color: #F44336;'>💕</um>",
+          "我不知道该怎么说，我不怎么会说话，但我想告诉你，从我看见你的第一面开始，我就有点心动，当时我没在意，直到今年秋招，我们俩的相处时间才开始多起来，特别是您上次讲了您的经历，渐渐的我发现我的生活离不开你的影子，我努力的克制住自己，才知道原来我刻意的克制自己只会让自己更加的喜欢你，我想通了，与其刻意的让自己不喜欢你，不如敞开心怀争取你，至少我以后不会遗憾，因为我争取过，从今天开始，我想要告诉你，我想追你，不管你愿不愿意，我只想要说，我喜欢你！<um style='color: #F44336;'>💕</um>",
         typed_bool: 'typed_y',
         cursor_char: 'cursor_heart',
         bg_style_pure_words: 'bg_opacity',
@@ -160,6 +161,9 @@
           if (typeof theme_content['bg_img'] != 'undefined' && theme_content['bg_img'] != '') {
             $('.div_pure_words_bg').css({
               'background-image': 'url(' + theme_content['bg_img'] + ')',
+              'background-repeat': 'no-repeat',
+              'background-size': 'cover',
+              overflow: 'hidden',
             })
           }
         }
