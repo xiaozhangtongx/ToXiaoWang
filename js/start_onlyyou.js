@@ -5,7 +5,7 @@
             $("#div_onlyyou").css({"height":$(window).height()+260+"px"});
             $("#div_oy_inner").css({"height":$(window).height()+260+"px"});
 
-            // 设置自定义背景
+            // 设置自定义背景l
             var start_bg_img=start_content['bg_img'];
             if(typeof(start_content['bg_style'])!='undefined' && start_content['bg_style']=='bg_custom'){
                 if(typeof(start_bg_img)!='undefined' && start_bg_img!=''){
