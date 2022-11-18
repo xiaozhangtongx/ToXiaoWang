@@ -1,0 +1,27 @@
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-image: url('../img/bg.jpg');
+  background-size: 100%;
+  /* background-repeat: no-repeat; */
+}
+
+.title {
+  color: #fff;
+  margin-top: -10px;
+  text-align: center;
+}
+
+canvas {
+  position: relative;
+  width: 100%;
+  height: 80%;
+}
