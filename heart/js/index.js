@@ -1,3 +1,10 @@
+// 播放音乐
+document.addEventListener('click', musicPlay)
+function musicPlay() {
+  document.getElementById('player').play()
+  document.removeEventListener('click', musicPlay)
+}
+
 var settings = {
   particles: {
     length: 500, // Number of particles
