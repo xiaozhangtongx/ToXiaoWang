@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    overflow: hidden;
+}
+body{
+    background:url("../img/bg1.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+div{
+    display: flex;
+    overflow: hidden;
+}
+h1{
+    color:#d7cfc3;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-70%);
+    font-size:30px;
+    cursor:default;
+}
+
+canvas{
+    filter:blur(1px);
+}

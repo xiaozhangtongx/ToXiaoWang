@@ -5,6 +5,7 @@ function musicPlay() {
   document.removeEventListener('click', musicPlay)
 }
 
+// 绘制爱心
 var settings = {
   particles: {
     length: 500, // Number of particles
