@@ -1,5 +1,7 @@
 
 
+        
+         $("#ul_oy_btn").hide();;
         function init_onlyyou(){
             // 初始化两个div的高度
             $("#div_onlyyou").css({"height":$(window).height()+260+"px"});
@@ -79,7 +81,8 @@
                 } 
                 index_text_oy++;
             } else{
-                oy_show_note();
+                $(".go-next").hide();
+                $("#ul_oy_btn").show();
             }
         }
 
@@ -96,10 +99,10 @@
             setTimeout(function(){                
                 $('#div_onlyyou').fadeOut();
                 init_theme(); 
-            },2000);
+            },1000);
             setTimeout(function(){ 
                 $('#div_onlyyou').remove();
-            },3000);
+            },1000);
         }
 
 
