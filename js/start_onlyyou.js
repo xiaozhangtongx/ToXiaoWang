@@ -46,26 +46,17 @@
             // array_oy_benefit = array_oy_benefit.filter(function (s) {
             //     return s && s.trim(); // 去掉空值
             // }); //全空作品，但是却定义了key的情况
-            if(array_oy_benefit[0]==''){
-                array_oy_benefit[0]='我会把全部工资都给你';
-            }
-            if(array_oy_benefit[1]==''){
-                array_oy_benefit[1]='每天做好吃的给你';
-            }
-            if(array_oy_benefit[2]==''){
-                array_oy_benefit[2]='你睡不着时给你讲故事';
-            }
-            if(array_oy_benefit[3]==''){
-                array_oy_benefit[3]='给你自由去做喜欢的事情';
-            }            
-        }else{
-            array_oy_benefit=['我会把全部工资都给你','每天做好吃的给你','你睡不着时给你讲故事','给你自由去做喜欢的事情'];
         }
         console.log(array_oy_benefit); 
         var index_text_oy=0; 
 
         var count_text_oy=array_oy_benefit.length;
         console.log('一共有'+count_text_oy+'条件');
+
+        for(var i=0;i<6;i++){
+            oy_show_benefit()
+        }
+
         function oy_show_benefit(){
             var oy_text_height=$(".div_oy_text").height();
             if(index_text_oy<count_text_oy){  
@@ -78,9 +69,7 @@
                     console.log('update the document height +120');
                 } 
                 index_text_oy++;
-            } else{
-                oy_show_note();
-            }
+            } 
         }
 
         function oy_show_note(){

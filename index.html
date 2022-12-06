@@ -23,17 +23,7 @@
             <h1></h1>
             <img class="img_oy_text" src="" />
             <p class="p_oy_text"></p>
-            <div></div>
-
             <ul id="ul_oy_benefit">
-              <li class="li_oy_benefit"></li>
-              <li class="li_oy_benefit"></li>
-              <li class="li_oy_benefit"></li>
-              <li class="li_oy_benefit"></li>
-              <li class="li_oy_benefit"></li>
-              <li class="li_oy_benefit"></li>
-              <li class="li_oy_benefit"></li>
-              <li class="li_oy_benefit"></li>
               <li class="li_oy_benefit"></li>
               <li class="li_oy_benefit"></li>
               <li class="li_oy_benefit"></li>
@@ -50,10 +40,10 @@
           </div>
           <ul id="ul_oy_btn">
             <li onclick="oy_go_next()">Yes&nbsp;&nbsp;❤</li>
-            <li onclick="oy_show_benefit()">No&nbsp;&nbsp;✖</li>
+            <li onclick="oy_show_note()">No&nbsp;&nbsp;✖</li>
           </ul>
           <div id="div_oy_note" onclick="oy_hide_note()">
-            <img src="images/emoji_kelian.jpg" alt="" /><br />后面有更多我想说的，请告诉我Yes！
+            <img src="images/emoji_kelian.jpg" alt="" /><br />
             <div id="div_oy_note_close">✖</div>
           </div>
           <div id="div_oy_yes"><img src="images/emoji_bixin.jpg" alt="" /><br />太好了！哈哈~</div>
@@ -256,7 +246,6 @@
         img_bool: 'img_true',
         img_src: 'images/1.gif',
       } //可能为null
-      console.log(start_content)
       var start_id
       $(function () {
         //此事件为触发互动创意
